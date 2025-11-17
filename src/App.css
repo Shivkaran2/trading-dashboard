@@ -1,38 +1,115 @@
+/* Basic Styling for the Trading Dashboard */
 .App {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #f4f6f9;
+}
+
+.header {
   text-align: center;
+  margin-bottom: 30px;
+  color: #2d3e50;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.prices-table {
+  margin-bottom: 50px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+table th,
+table td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+
+table th {
+  background-color: #2d3e50;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+table td a {
+  text-decoration: none;
+  color: #007bff;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+table td a:hover {
+  text-decoration: underline;
+}
+
+.price-up {
+  color: green;
+}
+
+.price-down {
+  color: red;
+}
+
+.chart-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.stock-details {
+  text-align: center;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 30px;
+}
+
+.stock-details h2 {
+  margin-bottom: 20px;
+}
+
+.price-trend {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.trend-up {
+  color: green;
+}
+
+.trend-down {
+  color: red;
+}
+
+.order-buttons {
+  margin-top: 30px;
+}
+
+.buy-btn,
+.sell-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.buy-btn {
+  background-color: #4caf50;
+  color: white;
+}
+
+.sell-btn {
+  background-color: #f44336;
+  color: white;
+}
+
+.buy-btn:hover {
+  background-color: #45a049;
+}
+
+.sell-btn:hover {
+  background-color: #e53935;
 }
